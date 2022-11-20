@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <h1>アップロードはこちら</h1>
+        <a href="{{ url_for('upload_file') }}">uploader</a>
+    </head>
+    <bodey>
+        <h1>計算</h1>
+        <a href="{{ url_for('predict') }}">predict</a>
+        <h1>結果</h1>
+        <a href="{{ url_for('show') }}">result</a>
+        <h2>テーブルデータの削除</h2>
+        <a href="{{ url_for('delete') }}">delete</a>
+    </bodey>
+</html>

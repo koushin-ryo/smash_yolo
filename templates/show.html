@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>x軸の分布</h2>
+        <div class="pic_frame">
+            <img src="{{ graph_x }} " style="float:right">
+        </div>
+        <div class="pic_frame">
+            {{ table_x|safe }}
+        </div>
+        <h4>平均値：{{ x_mean }}</h4>
+        <p>着地狩りの場面を除いた、横方向の間合い分布です。rxは、キャラ何体分かを示しています。</p>
+        <br><br>
+        <h2>y軸の分布</h2>
+        <div class="pic_frame">
+            <img src="{{ graph_y }} " style="float:right">
+        </div>
+        <div class="pic_frame">
+            {{ table_y|safe }}
+        </div>
+        <h4>平均値：{{ y_mean }}</h4>
+        <p>縦方向の間合いの分布です。</p>
+    </head>
+    <body>
+        <a href="{{ url_for('index') }}">戻る</a>
+    </body>
+</html>
